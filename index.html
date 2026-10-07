@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Riverside Community Theatre - Seat Picker</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    .seat-map { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(6, 7em); gap: 0.5em; }
+    .seat-map button { width: 100%; padding: 0.6em 0; border: 1px solid #555; border-radius: 4px; }
+    button.free { background: #e6ffe6; cursor: pointer; }
+    button.selected { background: #3366cc; color: white; cursor: pointer; }
+    button.taken { background: #ccc; color: #666; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="node_modules/react/umd/react.development.js"></script>
+  <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+  <script src="seat-picker.js"></script>
+  <script>
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(React.createElement(SeatPickerApp.SeatPicker));
+  </script>
+</body>
+</html>

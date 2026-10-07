@@ -1,0 +1,13 @@
+{
+  "name": "riverside-seat-picker",
+  "version": "1.0.0",
+  "description": "Seat picker for the Riverside Community Theatre ticket desk",
+  "private": true,
+  "scripts": {
+    "test": "node --test --test-reporter=spec"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
