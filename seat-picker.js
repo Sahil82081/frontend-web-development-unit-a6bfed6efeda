@@ -54,7 +54,7 @@
       ? "Selected"
       : "Free";
   }
-
+  console.log("");
   // Labels follow seat-map order.
   function selectionMessage(seats, selected) {
     const labels = seats
